@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Free Tour Package Website Tempalte | Smarteyeapps.com</title>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_op8E5Y4rB4444gMH5dPGZ");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_5rxxdgh', 'template_p3hgt19', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+<header class="continer-fluid ">
+    <div  class="header-top">
+        <div class="container">
+            <div class="row col-det">
+                <div class="col-lg-3 col-md-6 folouws">
+                  
+                    <ul class="ulright">
+                       <li> <small>Folow Us </small>:</li>
+                        <li>
+                            <i class="fab fa-facebook-square"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter-square"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 d-none d-md-block col-md-6 btn-bhed">
+                    <button class="btn btn-sm btn-success">Join Us</button>
+                    <button class="btn btn-sm btn-default">Donate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu-jk" class="header-bottom">
+        <div class="container">
+            <div class="row nav-row">
+                <div class="col-lg-3 col-md-12 logo"> 
+                    <img src="assets/images/krish/logo.jpeg" alt="" height="50" width="50">
+                    <a href="index.html">
+                        Krishtara Divya Lau Trust
+                        <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-lg-none  small-menu fa-bars"></i></a>
+                    </a>
+
+                </div>
+                <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
+
+                            <ul class="navbad">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#aboutUs">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="events.html">Upcoming Events</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="gallery.html">Gallery</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="donate.html">Donate</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact_us.html">Contact US</a>
+                                </li>
+                            </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+</header>
+ 
+  <!--  ************************* Page Title Starts Here ************************** -->
+        
+    <div class="page-nav no-margin row">
+        <div class="container">
+            <div class="row">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
+    </div>
+    
+    
+   
+  <!--  ************************* Contact Us Starts Here ************************** -->
+
+    <div class="row contact-rooo no-margin">
+        <div class="container">
+            <div class="row">
+
+                <form id="contact-form" style="padding:20px" class="col-sm-7">
+                    <div class="row cont-row">
+                        <div  class="col-sm-3"><label>Enter Name </label><span>:</span></div>
+                        <div class="col-sm-8">
+                            <input type="text" name="user_name" placeholder="Enter Name" class="form-control input-sm"  >
+                        </div>
+                    </div>
+                    <div  class="row cont-row">
+                        <div  class="col-sm-3"><label>Email Address </label><span>:</span></div>
+                        <div class="col-sm-8">
+                            <input type="email" name="user_email" placeholder="Enter Email Address" class="form-control input-sm"  >
+                        </div>
+                    </div>
+                    <div  class="row cont-row">
+                        <div  class="col-sm-3"><label>Mobile Number</label><span>:</span></div>
+                        <div class="col-sm-8">
+                            <input type="number" name="contact_number" placeholder="Enter Mobile Number" class="form-control input-sm"  >
+                        </div>
+                    </div>
+                    <div  class="row cont-row">
+                        <div  class="col-sm-3"><label>Enter Message</label><span>:</span></div>
+                        <div class="col-sm-8">
+                            <textarea name="message" rows="5" placeholder="Enter Your Message" class="form-control input-sm"></textarea>
+                        </div>
+                    </div>
+                    <div style="margin-top:10px;" class="row">
+                        <div style="padding-top:10px;" class="col-sm-3"><label></label></div>
+                        <div class="col-sm-8">
+                            <input type="submit" value="Send Message" class="btn btn-primary btn-sm"/>
+                        </div>
+                    </div>
+                </form>
+     
+                <div class="col-sm-5">
+                    <div style="margin:50px" class="serv">
+                        <h2 style="margin-top:10px;">Address</h2>
+                        <address class="md-margin-bottom-40">
+                            Krishtara Divya Lau Trust <br>
+                            B-42, Sector-19, Noida <br>
+                            Uttar Pradesh, IND <br>
+                            Phone: 0120-6513352 / 9891462827 <br>
+                            Email: <a href="mailto:krishtaratrust@gmail.com" class="">krishtaratrust@gmail.com</a><br>
+                            Web: <a href="smart-eye.html" class="">krishtara.github.io/home</a>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+       
+      
+      
+       
+  
+                 
+  <!--  ************************* Footer Starts Here ************************** -->
+          
+    <div class="copy">
+        <div class="container">
+            <span>
+                <a><i class="fab fa-github"></i></a>
+                <a><i class="fab fa-google-plus-g"></i></a>
+                <a><i class="fab fa-pinterest-p"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-facebook-f"></i></a>
+            </span>
+        </div>
+</div>
+          
+    
+</body>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>
