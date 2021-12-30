@@ -192,18 +192,6 @@ body {
     background-size: auto;
   }
 }
-@media screen and (max-width: 767px) {
-  .page-nav {
-    padding-top: 200px;
-    padding-bottom: 40px;
-  }
-}
-@media screen and (max-width: 356px) {
-  .page-nav {
-    padding-top: 200px;
-    padding-bottom: 40px;
-  }
-}
 .page-nav h2 {
   font-size: 28px;
   width: 100%;
@@ -306,7 +294,7 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1325px;
 }
 @media screen and (max-width: 575px) {
   .container {
@@ -343,11 +331,11 @@ header .header-top .col-det .ulleft li span {
   margin-left: 15px;
 }
 header .header-top .col-det .ulright {
-  float: right;
+  float: left;
 }
 header .header-top .col-det .ulright li {
   float: left;
-  padding: 10px;
+  padding: 4px;
   color: #d3d7ce;
   font-size: 1rem;
   font-weight: 600;
@@ -392,6 +380,7 @@ header .nav-col .navbad {
   display: block;
   float: right;
 }
+
 @media screen and (max-width: 991px) {
   header .nav-col .navbad {
     width: 100%;
@@ -416,7 +405,7 @@ header .nav-col .navbad li {
   }
 }
 header .nav-col .navbad li a {
-  color: #686968 !important;
+  color: #686968;
   border: 1px solid #ccc;
   border-radius: 50px;
 }
@@ -675,7 +664,7 @@ header .small-menu {
 
 @media screen and (max-width: 940px) {
   .events {
-    padding: 30px 10px;
+    padding: 0 10px;
   }
 }
 .events .event-ro .event-box {
@@ -976,7 +965,7 @@ header .small-menu {
 }
 @media screen and (max-width: 940px) {
   .gallery {
-    padding: 30px 10px;
+    padding: 10px 10px;
   }
 }
 
@@ -1026,6 +1015,29 @@ header .small-menu {
 
 .gallery_product {
   margin-bottom: 30px;
+}
+
+.active-navbar {
+  background-color: #3cc88f;
+  color: white !important;
+}
+
+.website-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.follow-us {
+  flex: 1;
+}
+
+.follow-us ul {
+  display: flex;
+}
+
+.follow-us li {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

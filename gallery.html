@@ -19,27 +19,29 @@
 <header class="continer-fluid ">
     <div  class="header-top">
         <div class="container">
-            <div class="row col-det">
-                <div class="col-lg-3 col-md-6 folouws">
+            <div class="row">
+                <div class="follow-us">
                     <ul class="ulright">
                         <li> <small>Follow Us </small>:</li>
                          <li>
-                             <i class="fab fa-facebook-square"></i>
+                             <a href="https://www.facebook.com/KrishtaraDivyaLauTrust" target="_blank">
+                                <i class="fab fa-facebook-square"></i>
+                             </a>
                          </li>
                          <li>
-                             <i class="fab fa-twitter-square"></i>
+                             <a href="https://twitter.com/KrishtaraTrust" target="_blank">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
                          </li>
                          <li>
+                            <a href="https://twitter.com/KrishtaraTrust" target="_blank">
                              <i class="fab fa-instagram"></i>
-                         </li>
-                         <li>
-                             <i class="fab fa-linkedin"></i>
+                             </a>
                          </li>
                      </ul>
                 </div>
-                <div class="col-lg-8 d-none d-md-block col-md-6 btn-bhed">
-                    <button class="btn btn-sm btn-success">Join Us</button>
-                    <button class="btn btn-sm btn-default">Donate</button>
+                <div>
+                    <button class="btn btn-sm btn-success" onclick="window.location='donate.html'">Donate</button>
                 </div>
             </div>
         </div>
@@ -48,8 +50,8 @@
         <div class="container">
             <div class="row nav-row">
                 <div class="col-lg-3 col-md-12 logo"> 
-                    <img src="assets/images/krish/logo.jpeg" alt="" height="50" width="50">
-                    <a href="index.html">
+                    <img src="assets/images/logo/logo.jpeg" alt="" height="50" width="50">
+                    <a href="index.html" class="website-name">
                         Krishtara Divya Lau Trust
                         <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-lg-none  small-menu fa-bars"></i></a>
                     </a>
@@ -68,16 +70,14 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="events.html">Upcoming Events</a>
                                 </li>
-
                                 <li class="nav-item">
-                                    <a class="nav-link" href="gallery.html">Gallery</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="donate.html">Donate</a>
+                                    <a class="nav-link active-navbar" href="gallery.html">Gallery</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact_us.html">Contact US</a>
+                                    <a class="nav-link" href="videos.html">Videos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact_us.html">Contact Us</a>
                                 </li>
                             </ul>
                 </div>
@@ -101,59 +101,36 @@
  <!--  ************************* Gallery Starts Here ************************** -->
         <div id="portfolio" class="gallery">    
            <div class="container">
-              <div class="row">
-                
-
-        <div class="gallery-filter d-none d-sm-block">
-            <button class="btn btn-default filter-button" data-filter="all">All</button>
-            <button class="btn btn-default filter-button" data-filter="hdpe">Finance</button>
-            <button class="btn btn-default filter-button" data-filter="sprinkle">Digital Marketing</button>
-            <button class="btn btn-default filter-button" data-filter="spray"> Money</button>
-            <button class="btn btn-default filter-button" data-filter="irrigation">Business Alaysis</button>
-        </div>
-        <br/>
-
-
-
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter hdpe">
-                <img src="assets/images/events/image_01.jpg" class="img-responsive">
+                    <div class="gallery-filter  d-sm-block">
+                        <ul>
+                            <li>
+                                <a href="https://drive.google.com/drive/folders/1rY7igcdZuCFOMuBq6nHu1ShvbGZ1on97?usp=sharing" target="_blank">
+                                   - Nirjala ekadashi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://drive.google.com/drive/folders/1wyH-LBG3wMCINyqdwBHg8PnBQP8LTB_m?usp=sharing" target="_blank">
+                                   - Children's day
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://drive.google.com/drive/folders/1IqGQGIGvKmmP1fvP8YoZ1BuTbhL4jknP?usp=sharing" target="_blank">
+                                   - Earth day
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://drive.google.com/drive/folders/17p3Fos1SuDULeEj-Q-pgEKSL67Kl_y9M?usp=sharing" target="_blank">
+                                  - Free food distribution
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://drive.google.com/drive/folders/1SiF_-H4fktx6DZeWWiWRBdOo4HlmsaWI?usp=sharing" target="_blank">
+                                  - Covid services
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
-
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="assets/images/events/image_02.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter hdpe">
-                <img src="assets/images/events/image_01.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
-                <img src="assets/images/events/image_03.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter spray">
-                <img src="assets/images/events/image_04.jpg" class="img-responsive">
-            </div>
-
-          
-
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter spray">
-                <img src="assets/images/events/image_05.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
-                <img src="assets/images/events/image_06.jpg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-3 col-md-4 col-sm-3 col-xs-6 filter irrigation">
-                <img src="assets/images/events/image_07.jpg" class="img-responsive">
-            </div>
-
-            
-        </div>
-    </div>
-       
-       
        </div>
         <!-- ######## Gallery End ####### -->    
   
@@ -163,16 +140,6 @@
       <footer class="footer">
         <div class="container">
             <div class="row">
-                <!-- <div class="col-md-4 col-sm-12">
-                    <h2>Useful Links</h2>
-                    <ul class="list-unstyled link-list">
-                        <li><a ui-sref="about" href="#/about">About us</a><i class="fa fa-angle-right"></i></li>
-                        <li><a ui-sref="portfolio" href="#/portfolio">Portfolio</a><i class="fa fa-angle-right"></i></li>
-                        <li><a ui-sref="products" href="#/products">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-                        <li><a ui-sref="gallery" href="#/gallery">Gallery</a><i class="fa fa-angle-right"></i></li>
-                        <li><a ui-sref="contact" href="#/contact">Contact us</a><i class="fa fa-angle-right"></i></li>
-                    </ul>
-                </div> -->
                 <div class="col-md-4 col-sm-12 map-img">
                     <h2>Contact Us</h2>
                     <address class="md-margin-bottom-40">
@@ -181,28 +148,13 @@
                         Uttar Pradesh, IND <br>
                         Phone: 0120-6513352 / 9891462827 <br>
                         Email: <a href="mailto:krishtaratrust@gmail.com" class="">krishtaratrust@gmail.com</a><br>
-                        Web: <a href="smart-eye.html" class="">krishtara.github.io/home</a>
+                        Web: <a href="https://krishtara.github.io/home" class="">https://krishtara.github.io/home</a>
                     </address>
 
                 </div>
             </div>
         </div>
-        
-
-    </footer>
-    <div class="copy">
-        <div class="container">
-            <span>
-                <a><i class="fab fa-github"></i></a>
-                <a><i class="fab fa-google-plus-g"></i></a>
-                <a><i class="fab fa-pinterest-p"></i></a>
-                <a><i class="fab fa-twitter"></i></a>
-                <a><i class="fab fa-facebook-f"></i></a>
-            </span>
-        </div>
-    </div>
-          
-    
+    </footer>  
 </body>
 
 <script src="assets/js/jquery-3.2.1.min.js"></script>
