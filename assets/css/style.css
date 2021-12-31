@@ -115,6 +115,9 @@ body {
   margin-bottom: 20px;
 }
 @media screen and (max-width: 767px) {
+  .slider-img img {
+    height: 300px !important;
+  }
   .session-title {
     padding: 5px;
   }
@@ -180,6 +183,9 @@ body {
   margin: auto;
 }
 @media screen and (max-width: 992px) {
+  .slider-img img {
+    height: 300px !important;
+  }
   .page-nav {
     background-size: auto;
   }
@@ -191,6 +197,9 @@ body {
   color: #444;
 }
 @media screen and (max-width: 600px) {
+  .slider-img img {
+    height: 300px !important;
+  }
   .page-nav h2 {
     font-size: 26px;
   }
@@ -516,6 +525,7 @@ header .small-menu {
 .slider-img img {
   position: relative;
   z-index: -1;
+  height: 570px;
 }
 
 .slider .owl-nav .owl-prev,
